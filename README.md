@@ -19,6 +19,15 @@ Create a new contract account record with private key
 ### _Create
 The same, but for internal call in the first binding in specific chainId
 
+### Sign
+Invoke TEE api _Sign method to sign a useroperation after verify the passkey signature.
+
+### SignPaymaster
+get a paymaster siganature.
+
+### _Submit
+If get the TEE siganature (and paymaster signature), do some bundler simulation and aggregation jobs, then send to RPC.
+
 ### SSOLogin(no Zk for now)
 provide a email to get a ens and contract address.
 will get a ZK version later: provide a ZK Proof（get from local ZK SDK) to SSO, if verified, get a contract address and ens.
